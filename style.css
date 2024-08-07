@@ -1,0 +1,445 @@
+/*reset code and common starts here*/
+
+:root{
+   -o-transition: all 0.3s; 
+   --scale: scale(1.1)
+   --box-shadow:  box-shadow: 0.1rem 0.1rem 0.1rem black,
+   -0.1rem 0rem 0.1rem white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+}
+
+html{
+    background-color: pink;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: aqua;
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem blueviolet,
+    -0.1rem 0rem 0.1rem blueviolet; 
+}
+.text-justify{
+    text-align: justify;
+}
+.text-white{
+    color: white;
+}
+
+.btn{
+    background-color: orange;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+    box-shadow: 0.1rem  0.1rem 0.1rem black;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.section-heading{
+    font-size: 5rem;
+    text-align: center;
+    font-family: "italic", cursive;
+}
+.section-center{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*reset code and common ends here*/
+
+/* header starts here*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+
+}
+
+.logo-figure{
+    border: 1px solid royalblue;
+    color: aqua;
+}
+.logo{
+    font-size: 4rem;
+}
+#menu_icon2{
+    display: none;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav ul li{
+    padding: 1rem;
+    transition: var(-o-transition)
+}
+nav ul li:hover{
+    background-color: brown;
+    border-radius: 0.6rem;
+}
+.nav__link{
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* header ends here*/
+
+/*banner section starts here*/
+.banner {
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.banner article{
+    flex-basis: 50%; 
+    margin: 1rem; 
+}
+.banner__heading{
+    display: inline-block;
+    background-color: rgba(33, 33, 243, 0.425);
+    padding: 1rem;
+    color: brown;
+    margin-bottom: 1.25rem;
+    font-size: 4rem;
+}
+.banner__description{
+    font-size: 1.9rem;
+}
+.banner aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner__image {
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+/*banner section ends here*/
+
+/*About her starts here*/
+#blog-about{
+    background-color: rgb(98, 136, 111);
+    
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+}
+.card{
+    flex: 1;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond ;
+    padding: 3rem 1rem ;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    transition: var(-o-transition)
+}
+.card:hover{
+    transform: var(--scale) ;
+}
+.card__header{
+    font-size: 3rem;
+}
+
+.card__description{
+    padding: 0.5rem 0rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card__btn{
+    width: 80%;
+}
+
+/*About her ends here*/
+
+/*Archieves section starts here*/
+.archieves-container{
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+}
+
+.archieves__lists{
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+}
+.archieves__list{
+
+}
+
+.archieves__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: var(-o-transition)
+}
+
+.archieves__img:hover{
+    transform: var(--scale) ;
+}
+
+
+/*Archieves section ends here*/
+
+/*Blog-posts section starts here*/
+.blog-posts{
+    gap: 2rem ;
+}
+.blog-post{
+    width: 70%;
+    display: flex;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem blueviolet,
+    -0.1rem 0rem 0.1rem blueviolet; 
+    transition: var(-o-transition) ;
+}
+.blog-post:hover{
+    transform: var(--scale);
+}
+.blog-post__aside{
+    flex: 1;
+}
+.blog-post__content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+    gap: 1rem;
+}
+
+.blog-post__heading{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.blog-post__sub-heading{
+    font-size: 2rem;
+    
+}
+.blog-post__description{
+    font-size: 1.6rem;
+    text-align: justify;   
+}
+.blog-post__btn{
+    width: 30%;
+}
+/*Blog-posts section ends here*/
+
+/*Contact section starts here*/
+#contact-section{
+    background-color: black;
+    min-height: 90vh;
+}
+form{
+    box-shadow: 0.1rem 0.1rem 0.1rem black,
+   -0.1rem 0rem 0.1rem black;
+   padding: 1rem;
+   color: aliceblue;
+   margin: 2rem;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+.form-control > input, textarea{
+    flex: 0.7;
+    width: 40rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.form-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact__btn{
+    width: 30%;
+    box-shadow: 0.1rem 0.1rem 0.1rem black,
+   -0.1rem 0rem 0.1rem white;
+}
+/*Contact section ends here*/
+
+/*Footer section starts here*/
+.footer{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    gap: 1rem;
+}
+.copyright__text{
+    font-size: 1.5rem;
+}   
+.footer__link{
+    color: blue;
+    transition: all 0.3s;
+}
+.footer__link:hover{
+    color: red;
+    transform: scale(1.5);
+}    
+.footer__nav{
+    display: flex;
+    gap: 1rem;
+}
+.footer__icon{
+    font-size: 2rem;
+}
+/*Footer section ends here*/
+
+/* responsiveness starts here*/
+@media screen and (max-width: 992px){
+    .banner {  
+        flex-direction: column;             
+    }
+    .banner article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size: 55.5%;
+    }
+    .banner article{
+      width: 80%;
+    }
+    .cards{
+        width: 80%;
+       flex-direction:column ; 
+    }
+   #archieves{
+    min-height: auto;
+   } 
+   .blog-post{
+    width: 80%;
+    flex-direction: column;
+
+   }
+   #contact-section {
+    min-height: auto;
+   }
+}
+@media screen and (max-width: 600px){
+    html {
+        font-size: 48%;
+    }
+    header {
+        flex-direction: column;
+
+    }
+    #menu_icon2{
+        display: block;
+        margin: 2rem 0rem;
+    }
+    .hidden{
+        display: none;
+    }
+    nav ul{
+       flex-direction: column;
+       padding-left: 2.5rem;
+    }
+    .banner{
+        min-height: auto;
+    }
+    .banner article{
+       width: 90%;
+    }
+    .banner__image{
+        max-width: 100%;
+    }
+    #blog-about{
+        min-height: auto;
+    }
+    .cards{
+        width: 90%; 
+    }
+    .archieves__lists{
+        flex-wrap: wrap;
+        gap: 3rem;
+        flex-direction: column;
+        width: 90%;
+    }
+    .blog-post{
+        width: 90%;
+    }
+    form{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control > input, textarea {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}
+
+/* responsiveness ends here*/
